@@ -16,7 +16,7 @@ Empty
 
 ### 제출 일자
 
-2024년 05월 10일 07:46:47
+2024년 05월 10일 07:48:53
 
 ### 문제 설명
 
@@ -104,7 +104,7 @@ Empty
 <th>CATEGORY</th>
 <th>AUTHOR_ID</th>
 <th>PRICE</th>
-<th data-sider-select-id="1dc0de2e-8eaf-4461-b1c7-c6c6371206f9">PUBLISHED_DATE</th>
+<th>PUBLISHED_DATE</th>
 </tr>
 </thead>
         <tbody><tr>
