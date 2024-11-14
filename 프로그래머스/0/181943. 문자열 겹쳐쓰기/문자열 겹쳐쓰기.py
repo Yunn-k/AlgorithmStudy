@@ -1,4 +1,6 @@
 def solution(my_string, overwrite_string, s):
-    answer = my_string[:s] + overwrite_string + my_string[s + len(overwrite_string):]
+    list_m = list(my_string)
+    list_o = list(overwrite_string)
+    list_m[s:s+len(list_o)] = list_o
+    answer = ''.join(list_m) #리스트의 문자들을 이어붙여 문자열로 만듦
     return answer
-# 처음엔 my_string에서 교체구간만큼의 문자열을 구한 다음에 replace로 바꿔치기 했는데, 같은 문자열이 여러개 나올 경우 원하는 구간을 교체하지 못한다는 점에서 문제가 됨!
