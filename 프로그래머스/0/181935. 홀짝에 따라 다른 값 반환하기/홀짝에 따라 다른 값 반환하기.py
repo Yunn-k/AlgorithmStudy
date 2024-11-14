@@ -1,12 +1,10 @@
 def solution(n):
     answer = 0
+
     if n % 2 == 1:
-        for i in range(n + 1):
-            if i % 2 == 1:
-                answer += i
+        answer = sum(range(1, n+1, 2))
     else:
-        for i in range(n + 1):
-            if i % 2 == 0:
-                answer += (i * i)
-        
+        answer = sum(i * i for i in range(2, n + 1, 2)) 
+        #for문을 제너레이터로 반환하여 sum처리
+
     return answer
