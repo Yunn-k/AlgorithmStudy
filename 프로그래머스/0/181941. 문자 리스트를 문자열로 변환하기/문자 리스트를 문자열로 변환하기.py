@@ -1,7 +1,4 @@
 def solution(arr):
-    answer = ''
-    
-    for s in arr:
-        answer += s
-        
+    answer = ''.join(arr)
+ 
     return answer
