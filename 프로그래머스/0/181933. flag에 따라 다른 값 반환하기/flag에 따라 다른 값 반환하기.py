@@ -1,5 +1,2 @@
 def solution(a, b, flag):
-    if flag == True:
-        return a + b
-    else:
-        return a - b
+    return a + b if flag == True else a -b
