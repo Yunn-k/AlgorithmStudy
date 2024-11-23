@@ -7,22 +7,15 @@ def solution(code):
         if mode == 0:
             if c != '1':
                 if i % 2 == 0:
-                    answer += c
-                else:
-                    continue
+                    answer += c    
             else:
                 mode = 1
-                continue
             
-        if mode == 1:
+        elif mode == 1:
             if c != '1':
                 if i % 2 == 1:
-                    answer += c
-                else:
-                    continue
+                    answer += c        
             else:
-                mode = 0     
-                continue
+                mode = 0                     
         
-    answer = 'EMPTY' if len(answer) == 0 else answer
-    return answer
+    return 'EMPTY' if len(answer) == 0 else answer
