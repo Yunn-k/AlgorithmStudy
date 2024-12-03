@@ -1,14 +1,10 @@
 def solution(n, control):
     answer = 0
     
+    dict = {'w':1, 's':-1, 'd': 10, 'a' : -10};
+    
+    #control에서 읽어온 값을 dict의 key와 일치시키면서 처리
     for c in control:
-        if c == 'w':
-            n += 1;
-        elif c == 's':
-            n -= 1;
-        elif c == 'd':
-            n += 10;
-        elif c == 'a':
-            n -= 10;
+        n += dict[c]
     
     return n;
